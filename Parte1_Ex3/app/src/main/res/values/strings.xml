@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Parte1_Ex3</string>
+    <string name="message_input">Enter a Message</string>
+    <string name="sudden_movement">Do not make any\nsudden movements!</string>
+    <string name="input_x">X</string>
+    <string name="input_y">Y</string>
+    <string name="input_z">Z</string>
+</resources>

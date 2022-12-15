@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Parte1_Ex1</string>
+    <string name="number_input_1">Enter a Number</string>
+    <string name="number_input_2">Enter another Number</string>
+    <string name="sum_button">Sum</string>
+    <string name="text_result">Result: %1$d</string>
+</resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/accel"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAccelZ"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/input_z"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/editTextAccelY"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/input_y"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/editTextAccelZ"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextAccelX"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/editTextAccelX"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="172dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/input_x"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/light"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/light"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/gyro"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAccelX" />
+
+    <EditText
+        android:id="@+id/editTextGyroX"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/input_x"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextGyroY"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/input_y"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/editTextGyroX"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextGyroZ"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/input_z"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextGyroY"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAccelZ"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/location"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGyroX" />
+
+    <EditText
+        android:id="@+id/editTextLat"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/input_lat"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextLon"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/input_lon"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGyroZ"
+        android:autofillHints="" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

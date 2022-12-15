@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Parte2</string>
+    <string name="accel">Acelerômetro (X/Y/Z)</string>
+    <string name="light">Luminosidade</string>
+    <string name="gyro">Giroscópio (X/Y/Z)</string>
+    <string name="location">Lat/Lon</string>
+    <string name="input_x">X</string>
+    <string name="input_y">Y</string>
+    <string name="input_z">Z</string>
+    <string name="input_lat">Lat</string>
+    <string name="input_lon">Lon</string>
+</resources>
